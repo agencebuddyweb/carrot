@@ -1,4 +1,4 @@
-# js-smart-classes
+# jquery-smart-classes
 Collection of small snippets for implementation of modular smart classes based on Javascript
 
 ### Prevent double-click on element
@@ -24,3 +24,11 @@ Useful for images/files uploads and stuff that take some time to send.
       $('.js-loading').submit(function () {
         $('#loading-modal').modal()
       });
+      
+### Simulate Click on another input
+
+Very useful for files inputs if you want to show a different button than the usual one
+
+    $('.js-trigger-input').click(function() {
+       $('#' + $(this).data('input-id')).click();
+    });
