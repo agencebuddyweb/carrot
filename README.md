@@ -68,3 +68,18 @@ Needs to have to attributes : data-key and data-value to the element
             document.location.search = kvp.join('&');
         }
     })
+
+#### Smooth Scroll
+
+		$('.js-smooth-scroll').click( function() {
+			var page = $(this).attr('href');
+			var headerHeight = 80;
+			var speed = 400; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top - headerHeight }, speed ); // On récupére l'espace perdu avec le header.
+			return false;
+		});
+		
+		
+#### Fade-in on load
+
+	$('.js-fade-in').fadeIn(2000).removeClass('hidden');
