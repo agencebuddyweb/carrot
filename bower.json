@@ -1,0 +1,23 @@
+{
+  "name": "carrot",
+  "homepage": "https://github.com/agencebuddyweb/carrot",
+  "authors": [
+    "Bruno Pérez <bruno.perez@buddyweb.fr>"
+  ],
+  "description": "Collection of modular smart classes based on jQuery",
+  "main": "src/carrot.js",
+  "moduleType": [],
+  "keywords": [
+    "jquery",
+    "javascript",
+    "classes"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
