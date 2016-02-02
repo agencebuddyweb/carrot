@@ -22,15 +22,18 @@
             }
         });
 
-        $('.js-loading').submit(function () {
-            $('#loading-modal').modal()
-        });
 
         $('.js-trigger-input').click(function() {
             $('#' + $(this).data('input-id')).click();
         });
 
+        // requires TWBS
         $('.js-modal-auto-launch').modal();
+
+        // requires TWBS
+        $('.js-loading').submit(function () {
+            $('#loading-modal').modal()
+        });
 
         $('.js-insert-param').click(function() {
             var key = escape($(this).data('key'));
