@@ -4,6 +4,12 @@
 
         'use strict';
 
+        // clickable elements
+        $('.js-clickable').on('click', function() {
+            var link = $(this).parents('.js-clickable-wrapper').data('href')
+            console.log(link);
+        });
+
         $(".js-no-double-click").one("click", function () {
             $(this).click(function () {
                 return false;
@@ -78,5 +84,6 @@
         setDimensions();
     });
     setDimensions();
+
 
 })(jQuery, this);
