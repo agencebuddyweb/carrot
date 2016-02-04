@@ -13,6 +13,9 @@
     "classes"
   ],
   "license": "MIT",
+  "dependecies": {
+    "bootstrap" : ">= 3"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
