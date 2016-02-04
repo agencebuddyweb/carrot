@@ -5,11 +5,11 @@
         'use strict';
 
         // clickable elements
-        $('.js-clickable').on('click', function() {
-            var link = $(this).parents('.js-clickable-wrapper').data('href')
-            console.log(link);
+        $("[data-carrot='clickable']").children().not("[data-carrot='not-clickable']").css('cursor', 'pointer');
+        $("[data-carrot='clickable']").children().not("[data-carrot='not-clickable']").on('click', function() {
+            window.location = $(this).parent("[data-carrot='clickable']").data('href');
         });
-
+        
         $(".js-no-double-click").one("click", function () {
             $(this).click(function () {
                 return false;

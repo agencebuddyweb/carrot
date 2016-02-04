@@ -5,14 +5,69 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <style rel="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+          integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+          crossorigin="anonymous">
 
     <script src="../src/carrot.js"></script>
 </head>
 
-<h1>Test</h1>
+<div class="container">
+    <div class="row">
+        <div class="jumbotron">
+            <h1>Carrot</h1>
 
-<div class="js-clickable">
-    voici une div
+            <p>Bootstrap's missing toolkit</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <h2>Cliquable zones</h2>
+        <p>Sometimes you want to allow people that click in all the zone near your link to access the link.</p>
+    </div>
+    <div class="row">
+        <table class="table table-hover">
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Position</th>
+                <th>Not clickable row</th>
+            </tr>
+            <tr data-carrot="clickable" data-href="https://en.wikipedia.org/wiki/Zinedine_Zidane">
+                <td>1</td>
+                <td><a href="https://en.wikipedia.org/wiki/Zinedine_Zidane">Zinedine Zidane</a></td>
+                <td>France</td>
+                <td>Attacking midfielder</td>
+                <td data-carrot="not-clickable">
+                    <div class="btn btn-success">Like player</div>
+                </td>
+            </tr>
+            <tr data-carrot="clickable" data-href="https://en.wikipedia.org/wiki/Lionel_Messi">
+                <td>1</td>
+                <td><a href="https://en.wikipedia.org/wiki/Lionel_Messi">Lionel Messi</a></td>
+                <td>Argentina</td>
+                <td>Forward</td>
+                <td data-carrot="not-clickable">
+                    <div class="btn btn-success">Like player</div>
+                </td>
+            </tr>
+            <tr data-carrot="clickable" data-href="https://en.wikipedia.org/wiki/Lu%C3%ADs_Figo">
+                <td>1</td>
+                <td><a href="https://en.wikipedia.org/wiki/Lu%C3%ADs_Figo">Luis Figo</a></td>
+                <td>Portugal</td>
+                <td>Winger</td>
+                <td data-carrot="not-clickable">
+                    <div class="btn btn-success">Like player</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <pre>%% montrer code source clickable et not-clickable </pre>
+    </div>
+
 </div>
+
+
 </html>
